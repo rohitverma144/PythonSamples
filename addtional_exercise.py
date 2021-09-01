@@ -7,7 +7,7 @@ def is_perfect_root(b):
     return False
 
 def find_true(c):
-    for i in range(1,c):
+    for i in range(1,int(math.sqrt(c)))):
         b = c - i*i 
         if is_perfect_root(b) and b > 0:
             return True
